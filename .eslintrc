@@ -1,0 +1,32 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base/legacy",
+        "plugin:vue/vue3-recommended",
+        "plugin:vue/base",
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "no-console": 0,
+        "vue/require-default-prop": "off",
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "state"
+                ]
+            }
+        ]
+    }
+}
